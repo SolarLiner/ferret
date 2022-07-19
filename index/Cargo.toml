@@ -1,0 +1,13 @@
+[package]
+name = "ferret-index"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+dashmap = { version = "5.3.4", features = ["serde"] }
+ferret-filemap = { path = "../filemap" }
+serde = { version = "1.0.137", features = ["derive"] }
+tokio = { version = "1.19.2", features = ["macros"] }
+uuid = { version = "1.1.2", features = ["serde", "v4"] }
